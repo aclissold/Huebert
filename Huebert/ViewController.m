@@ -27,39 +27,17 @@ const float kRate = 0.2f;
     [super viewDidLoad];
 
     self.motionManager = [CMMotionManager new];
-    [self.motionManager setDeviceMotionUpdateInterval:kRate];
-    [self.motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue]
-                                            withHandler:
-     ^(CMDeviceMotion *deviceMotion, NSError *error)
-     {
-//         NSString *x = [[NSString alloc] initWithFormat:@"%.02f", deviceMotion.attitude.roll];
-//         self.xLabel.text = x;
-//         NSString *y = [[NSString alloc] initWithFormat:@"%.02f", deviceMotion.attitude.pitch];
-//         self.yLabel.text = y;
-//         NSString *z = [[NSString alloc] initWithFormat:@"%.02f", deviceMotion.attitude.yaw];
-//         self.zLabel.text = z;
 
-         bool right = deviceMotion.attitude.roll > 0;
-         bool up = deviceMotion.attitude.pitch > 0;
-         float hue;
-         if (right) {
-             if (up) {
-                 // Quadrant 1
-                 hue = (M_PI_2 - deviceMotion.attitude.pitch) / (2*M_PI);
-             } else {
-                 // Quadrant 4
-                 hue = (M_PI_2 - deviceMotion.attitude.pitch) / (2*M_PI);
-             }
-         } else {
-             if (up) {
-                 // Quadrant 2
-                 hue = (3*M_PI_2 + deviceMotion.attitude.pitch) / (2*M_PI);
-             } else {
-                 // Quadrant 3
-                 hue = (3*M_PI_2 + deviceMotion.attitude.pitch) / (2*M_PI);
-             }
-         }
-         if (hue < 0) { hue *= -1; }
+    [self.motionManager setAccelerometerUpdateInterval:kRate];
+    [self.motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue mainQueue]
+                                             withHandler:
+     ^(CMAccelerometerData *accelerometerData, NSError *error)
+     {
+
+         NSLog(@"y: %f, x: %f", accelerometerData.acceleration.y, accelerometerData.acceleration.x);
+         float theta = atan2f(accelerometerData.acceleration.x, accelerometerData.acceleration.y) + M_PI;
+         NSLog(@"theta: %f", theta);
+         float hue = theta / (2 * M_PI);
 
          [UIView animateWithDuration:kRate animations:
           ^{

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BEGIN_INCLUDE(manifest) -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.andrewclissold.Huebert"
+          android:sharedUserId="com.andrewclissold.Huebert"
+          android:installLocation="auto"
+          android:versionCode="1390450848"
+          android:versionName="1.0">
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <supports-screens android:resizeable="true" android:normalScreens="true" android:largeScreens="true" android:smallScreens="false"/>
+    <application android:label="@string/app_name"
+                 android:name="com.apportable.app.VerdeApplication"
+                 android:hasCode="true"
+                 android:icon="@drawable/icon"
+                 android:theme="@style/FullScreenActivity"
+                 android:debuggable="true"
+                 android:largeHeap="false"
+                 android:hardwareAccelerated="false"
+>        <meta-data android:name="android.app.libs" android:value="v cxx System icu CoreFoundation ffi CommonCrypto crypto_1_01e ssl_1_01e Security SystemConfiguration CFNetwork Foundation freetype CoreGraphics BridgeKit OpenAL CoreText verde" />
+        <meta-data android:name="android.app.lib_name" android:value="verde" />
+        <meta-data android:name="android.app_name" android:value="Huebert" />
+        <meta-data android:name="apportable.splash_screen_type" android:value="letterbox" />
+        <meta-data android:name="apportable.orientation" android:value="portrait" />
+        <meta-data android:name="apportable.opengles2" android:value="true" />
+        <meta-data android:name="apportable.opengles.fast_color" android:value="true" />
+        <meta-data android:name="apportable.abi_list" android:value="" />
+        <activity android:name="com.apportable.activity.VerdeActivity"
+                  android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name="com.apportable.activity.GdbServerService"
+            android:label="@string/app_name" android:icon="@drawable/icon">
+            <intent-filter >
+                <action android:name="com.andrewclissold.Huebert.GdbServerService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.apportable.media.AudioManagerService" android:exported="false" />
+    </application>
+</manifest>
+<!-- END_INCLUDE(manifest) -->

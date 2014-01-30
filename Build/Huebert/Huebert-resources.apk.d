@@ -1,0 +1,19 @@
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/Huebert-resources.apk \
+ : /Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/drawable-hdpi/notify_panel_notification_icon_bg.png \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/drawable-mdpi/notify_panel_notification_icon_bg.png \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/layout/status_bar_ongoing_event_progress_bar.xml \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/values/strings.xml \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/values/styles.xml \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/values-v11/styles.xml \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/android_library_projects/market_apk_expansion/downloader_library/res/values-v9/styles.xml \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/verde_android_java/res/drawable-hdpi/ic_launcher.png \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/verde_android_java/res/layout/download.xml \
+/Users/andrewclissold/.apportable/SDK/platform/android/java_res/verde_android/verde_android_java/res/values/strings.xml \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/drawable/icon.png \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/drawable/notification_icon.png \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/drawable-hdpi/icon.png \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/drawable-mdpi/icon.png \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/drawable-xhdpi/icon.png \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/drawable-xxhdpi/icon.png \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/apk/res/values/strings.xml \
+/Users/andrewclissold/.apportable/SDK/Build/android-armeabi-debug/Huebert/AndroidManifest.xml \
