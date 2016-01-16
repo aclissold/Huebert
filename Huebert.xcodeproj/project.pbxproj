@@ -15,7 +15,7 @@
 		22345E66188B462200DA4198 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22345E65188B462200DA4198 /* AppDelegate.m */; };
 		22345E69188B462200DA4198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22345E67188B462200DA4198 /* Main.storyboard */; };
 		22345E6C188B462200DA4198 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22345E6B188B462200DA4198 /* ViewController.m */; };
-		22345E6E188B462200DA4198 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22345E6D188B462200DA4198 /* Images.xcassets */; };
+		22345E6E188B462200DA4198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22345E6D188B462200DA4198 /* Assets.xcassets */; };
 		22345E8B188BAF5800DA4198 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22345E8A188BAF5800DA4198 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,7 @@
 		22345E68188B462200DA4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22345E6A188B462200DA4198 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		22345E6B188B462200DA4198 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		22345E6D188B462200DA4198 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22345E6D188B462200DA4198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22345E8A188BAF5800DA4198 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 				22345E67188B462200DA4198 /* Main.storyboard */,
 				22345E6A188B462200DA4198 /* ViewController.h */,
 				22345E6B188B462200DA4198 /* ViewController.m */,
-				22345E6D188B462200DA4198 /* Images.xcassets */,
+				22345E6D188B462200DA4198 /* Assets.xcassets */,
 				22345E5C188B462200DA4198 /* Supporting Files */,
 			);
 			path = Huebert;
@@ -157,7 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22345E6E188B462200DA4198 /* Images.xcassets in Resources */,
+				22345E6E188B462200DA4198 /* Assets.xcassets in Resources */,
 				22345E60188B462200DA4198 /* InfoPlist.strings in Resources */,
 				22345E69188B462200DA4198 /* Main.storyboard in Resources */,
 			);
